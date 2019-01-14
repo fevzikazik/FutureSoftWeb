@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="ab33536da08d4c83ae69e5c3ffb4166c" Name="Diagram1">
+        <EntityTypeShape EntityType="dbFutureSoftModel.tbl_Kategori" Width="1.5" PointX="0.75" PointY="1.625" />
+        <EntityTypeShape EntityType="dbFutureSoftModel.tbl_Kullanici" Width="1.5" PointX="0.75" PointY="5.125" />
+        <EntityTypeShape EntityType="dbFutureSoftModel.tbl_Urun" Width="1.5" PointX="3" PointY="1" />
+        <AssociationConnector Association="dbFutureSoftModel.FK_tbl_Urun_tbl_Kategori" />
+        <AssociationConnector Association="dbFutureSoftModel.FK_tbl_Urun_tbl_Kullanici" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

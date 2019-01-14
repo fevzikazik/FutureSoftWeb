@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="dbFutureSoftModelStoreContainer" CdmEntityContainer="dbFutureSoftEntities">
+    <FunctionImportMapping FunctionImportName="spINSERT_tbl_Kullanici" FunctionName="dbFutureSoftModel.Store.spINSERT_tbl_Kullanici" />
+    <EntitySetMapping Name="tbl_Kategori">
+      <EntityTypeMapping TypeName="dbFutureSoftModel.tbl_Kategori">
+        <MappingFragment StoreEntitySet="tbl_Kategori">
+          <ScalarProperty Name="kategoriAd" ColumnName="kategoriAd" />
+          <ScalarProperty Name="kategoriID" ColumnName="kategoriID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_Kullanici">
+      <EntityTypeMapping TypeName="dbFutureSoftModel.tbl_Kullanici">
+        <MappingFragment StoreEntitySet="tbl_Kullanici">
+          <ScalarProperty Name="adres" ColumnName="adres" />
+          <ScalarProperty Name="tel" ColumnName="tel" />
+          <ScalarProperty Name="soyisim" ColumnName="soyisim" />
+          <ScalarProperty Name="isim" ColumnName="isim" />
+          <ScalarProperty Name="kSifre" ColumnName="kSifre" />
+          <ScalarProperty Name="kAdi" ColumnName="kAdi" />
+          <ScalarProperty Name="kullaniciID" ColumnName="kullaniciID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_Urun">
+      <EntityTypeMapping TypeName="dbFutureSoftModel.tbl_Urun">
+        <MappingFragment StoreEntitySet="tbl_Urun">
+          <ScalarProperty Name="imagePathUrl" ColumnName="imagePathUrl" />
+          <ScalarProperty Name="koordinatY" ColumnName="koordinatY" />
+          <ScalarProperty Name="koordinatX" ColumnName="koordinatX" />
+          <ScalarProperty Name="urunFiyat" ColumnName="urunFiyat" />
+          <ScalarProperty Name="urunAdi" ColumnName="urunAdi" />
+          <ScalarProperty Name="kullaniciID" ColumnName="kullaniciID" />
+          <ScalarProperty Name="kategoriID" ColumnName="kategoriID" />
+          <ScalarProperty Name="urunID" ColumnName="urunID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

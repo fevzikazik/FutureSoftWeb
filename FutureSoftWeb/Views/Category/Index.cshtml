@@ -1,0 +1,39 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_MyLayout.cshtml";
+}
+@using FutureSoftWeb.Models;
+@model IEnumerable<tbl_Kategori>
+
+<div class="container marketing">
+
+    @foreach (var cat in Model)
+    {
+        <div class="container marketing">
+            <h2 class="itemsTitle">@cat.kategoriAd</h2>
+            <div id="myCarousel1" class="carousel slide" data-ride="carousel">
+                <!-- Indicators -->
+                <div class="carousel-inner">
+                    <div class="item active">
+                        <div class="row">
+                            @foreach (var urun in cat.tbl_Urun)
+                            {
+                                <div class="col-lg-4">
+                                    <img src="~/@urun.imagePathUrl" alt="Generic placeholder image" width="200" height="200">
+                                    <h4>@urun.urunAdi</h4>
+                                    <p><a class="btn btn-default" href=@Url.Action("Index","ProductDetail", new { id = urun.urunID }) role="button">Görüntüle &raquo;</a></p>
+                                </div><!-- /.col-lg-4 -->
+                            }
+                            </div><!-- /.row -->
+                    </div>
+                </div>
+                <a class="left carousel-control" href="#myCarousel1" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a>
+                <a class="right carousel-control" href="#myCarousel1" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
+            </div><!-- /.carousel -->
+        </div>
+    }
+        
+
+
+    </div>
